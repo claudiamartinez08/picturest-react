@@ -1,0 +1,40 @@
+
+.boardCard {
+    width: 215px;
+    height: 176px;
+    border-radius:14px;
+    background-color: #FCFCFC;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 21px;
+    margin-left: 21px;
+    margin-bottom: 30px;
+}
+
+.pinName {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.pinLike {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+
+.pen {
+    position: absolute;
+    margin-left: 170px ; 
+    margin-top: -49.5px;   
+    width: 35px;
+    height: 35px;
+}
+
+.imageBoardCard {
+    width: 82px;
+    height: 109px;
+}
+

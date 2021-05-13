@@ -1,0 +1,18 @@
+.user {
+    display: flex;
+    margin-right: 40px;
+}
+
+.avatarImg{
+    position: absolute;
+    width:52px;
+    height: 52px;
+    border-radius: 50%;
+    
+    }
+
+.arrow {
+    margin-left:70px;
+    
+   
+}

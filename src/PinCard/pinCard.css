@@ -1,0 +1,48 @@
+
+.imageContainer {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imageStyle {
+    border-radius: 10px;
+    width: 215px;
+}
+
+.cardName {
+    font-weight: 700;
+    font-size: 12px;
+    position:relative;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.linkButton {
+    position: absolute;
+    width: 113px;
+    height: 28px;
+    border: none;
+    border-radius: 21.5px;
+    background-color:rgba(241, 241, 241, 0.75);
+    margin-left: 25px;
+    margin-top: -107px;
+   
+}
+
+.linkImg {
+    display: flex;
+
+}
+
+.urlCard {
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: -13px;  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

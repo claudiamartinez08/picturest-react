@@ -1,0 +1,16 @@
+.logoAll {
+    display:flex;
+    margin-left: 13px;
+}
+
+.imagen {
+    width: 48px;
+    height: 48px;
+}
+
+.appName {
+    margin-left: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 700;
+}
