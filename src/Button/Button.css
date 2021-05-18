@@ -8,6 +8,7 @@ font-size: 18px;
 margin-left: -900px;
 margin-top: 7px;
 font-weight: 500;
+cursor: pointer;
 }
 
 .button:hover {

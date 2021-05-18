@@ -8,6 +8,7 @@
 .imageStyle {
     border-radius: 10px;
     width: 215px;
+    cursor:zoom-in;
 }
 
 .cardName {
@@ -18,31 +19,32 @@
     margin-bottom: 40px;
 }
 
-.linkButton {
-    position: absolute;
-    width: 113px;
-    height: 28px;
+.urlLink {
+    display: flex;
+    align-items: center;     
     border: none;
+    width: 113px;
+    height: 27px;
     border-radius: 21.5px;
-    background-color:rgba(241, 241, 241, 0.75);
-    margin-left: 25px;
-    margin-top: -107px;
-   
+    background-color: rgba(241, 241, 241, 0.75);
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+    transform: translate(30px, -110px);
+    cursor:pointer;
+}
+
+.urlLink * {
+    margin-right: 4px;
+
 }
 
 .linkImg {
-    display: flex;
-
+    margin-left: 10px;
 }
 
-.urlCard {
-    display: flex;
-    align-items: baseline;
-    font-size: 12px;
-    font-weight: 500;
-    margin-left: 20px;
-    margin-top: -13px;  
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
+

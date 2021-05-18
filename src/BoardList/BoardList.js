@@ -1,11 +1,31 @@
 import BoardCard from "../BoardCards/BoardCards";
 import "./BoardList.css";
+import { useState, useEffect} from "react";
 
-const BoardList = ({boards}) => {
+const BoardList = ({allBoards}) => {
+const url= "http://localhost:5000/boards";
+const [boards, setBoards] = useState(null);
+
+    useEffect(() => {
+
+        fetch(url) 
+            .then((response) => {
+                if(response.ok) {
+                    return response.json();
+                }else
+                    throw Error(response.statusText);
+            })
+
+            .then((data) => {
+                setBoards(data) 
+            }
+    
+        )} , []);
+
     return (
         <div className="boardContainer">
-            {boards.map((board) => (
-                <BoardCard board={{name: board.name, likes: board.likes}}/>
+            {boards && boards.slice(0,6).map((board) => (
+                <BoardCard board={{title: board.title, likes: board.likes}}/>
             ))}
         </div>
 

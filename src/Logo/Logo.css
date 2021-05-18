@@ -1,6 +1,7 @@
 .logoAll {
     display:flex;
     margin-left: 13px;
+    cursor: pointer;
 }
 
 .imagen {

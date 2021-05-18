@@ -10,18 +10,7 @@ import Azul from "./assets/imagen4.png";
 import Food from "./assets/imagen5.png";
 
 function App() {
-  const handOfPins = [
-    {name: "Receta familiar", img: Familia, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "Puerta inglesa", img: Puerta, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "     ", img: Drone, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "Azul", img: Azul, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "    ", img: Food, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "Receta familiar", img: Familia, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "Puerta inglesa", img: Puerta, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "    ", img: Drone, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "Azul", img: Azul, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"},
-    {name: "    ", img: Food, url:"http://dummyimage.com/435x424.bmp/ff4444/ffffff"}
-  ];
+  
 
   const handOfBoards = [
     {name: "All pins", likes: "512 Pins"},
@@ -32,7 +21,7 @@ function App() {
     {name: "Quick Saves", likes: "1 Pin"}
   ];
 
-    
+
   return (
     <div>
       <Header />
@@ -40,7 +29,7 @@ function App() {
        <p className="title">Boards</p>
       <BoardList boards={handOfBoards}/>
       <p className="title">Pins</p>
-      <PinList cards={handOfPins}/>
+      <PinList/>
       
     </div>
   );

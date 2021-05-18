@@ -1,7 +1,5 @@
 .boardContainer {
     display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 80px;
 }

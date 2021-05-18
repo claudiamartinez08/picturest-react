@@ -12,7 +12,7 @@ const BoardCard = ({board}) => {
         onMouseLeave={() => setIsHovered(false)}
         onMouseEnter={() => setIsHovered(true)} >
 
-            <p className="pinName">{board.name}</p> 
+            <p className="pinName">{board.title}</p> 
             <p className="pinLike">{board.likes}</p>
             <div>               
                {isHovered && <svg className="pen" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
