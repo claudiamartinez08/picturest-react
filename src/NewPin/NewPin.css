@@ -1,0 +1,34 @@
+
+.formContainer {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    line-height: 1.8;
+    border-radius:10px;
+    background-color: #FCFCFC;
+    margin-left: 180px;
+    margin-top: -100px;
+    font-size: 16px;
+    }
+
+.createPinButton {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    border:white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.createPinButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.createPinButton:active{
+    background-color: white;
+    color: black;
+}

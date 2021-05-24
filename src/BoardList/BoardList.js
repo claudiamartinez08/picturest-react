@@ -23,10 +23,15 @@ const [boards, setBoards] = useState(null);
         )} , []);
 
     return (
-        <div className="boardContainer">
-            {boards && boards.slice(0,6).map((board) => (
+        <div>
+            <p className="title">Boards</p>
+        <br></br>
+        <div  className="boardContainer">
+            {boards && boards.slice(-6).map((board) => (
                 <BoardCard board={{title: board.title, likes: board.likes}}/>
             ))}
+        </div>
+            
         </div>
 
        /*  <div className="boardList">

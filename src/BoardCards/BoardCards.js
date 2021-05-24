@@ -1,6 +1,6 @@
 import "./BoardCards.css";
 import {useState} from 'react';
-import BoardImages from "../BoardImages/boardImages";
+import BoardImages from "../boardImages/boardImages";
 
 
 

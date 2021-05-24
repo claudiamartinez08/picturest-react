@@ -3,12 +3,12 @@ import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
 
-const Header = () => {
+const Header = ({user}) => {
     return (
         <div className="header">
            <Logo />
            <Button letter="Home"/>
-           <Icon className="user"/>
+           <Icon user={user} className="user"/>
            
         </div>
     

@@ -1,13 +1,17 @@
-import avatar from "../assets/avatar.png"
 import "./userCard.css"
 
-const UserCard = () => {
+const UserCard = ({user}) => {
+
     return (
-        <div className="userCard">
-            <img className="avatarImgCard" src={avatar} />
-            <p className="userNameCard">John Doe</p>
-            <p className="userName2">@johnny12</p>
-            <p className="followers">14 following</p>
+        <div>
+            {user && 
+            <div className="userCard">
+            <img className="avatarImgCard" src={user.avatar} />
+            <p className="userNameCard">{user.firstName + user.secondName}</p>
+            <p className="userName2">{"@" + user.username}</p>
+            <p className="followers">{user.following + " following"}</p>
+            </div>
+            }
         </div>
         
     )
