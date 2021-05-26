@@ -31,7 +31,9 @@ li {
     font-weight: 500;
     margin-left: -20px;
     cursor: pointer;
-    
-    
-    
+}
+
+.containerAll {
+    position: absolute;
+    width: 100%;
 }

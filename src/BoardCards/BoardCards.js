@@ -1,6 +1,5 @@
 import "./BoardCards.css";
 import {useState} from 'react';
-import BoardImages from "../boardImages/boardImages";
 
 
 
@@ -21,7 +20,6 @@ const BoardCard = ({board}) => {
                 <path d="M20.8892 12.943L25.3788 17.4326" stroke="#14142B" stroke-width="2"/>
                 </svg>}
             </div>
-            {/* <BoardImages/> */}
             
         </div>
     )

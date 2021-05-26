@@ -4,7 +4,7 @@ import UserCard from "./UserCard/userCard";
 import "./App.css";
 import PinList from "./PinList/pinList";
 import {useState, useEffect} from "react";
-import NewPin from "./NewPin/NewPin";
+
 
 
 function App() {
@@ -33,7 +33,6 @@ function App() {
       <Header user={users} />
       <UserCard user={users} />
       <BoardList/>
-      
       <PinList/>
       
     </div>
