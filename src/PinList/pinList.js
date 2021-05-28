@@ -11,7 +11,6 @@ const url= "http://localhost:5000/pins";
 const [pins, setPins] = useState([]);
 const [isClicked, setIsClicked] = useState(false);
 const onClick = () => setIsClicked(!isClicked);
-console.log(pins.reverse());
     useEffect(() => {
 
         fetch(url) 

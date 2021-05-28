@@ -6,16 +6,16 @@ import { useState } from "react";
 
 const Icon = ({user,}) => {
     const [isClicked, setIsClicked] = useState(false);
-    const onClick = () => setIsClicked(!isClicked);
+    //const onClick= setIsClicked(!isClicked) 
 
     return (
         <div className="user">
             
             <img className="avatarImg" src={user?.avatar}/>
-            <p onClick={(event => onClick(event.stopPropagation()))} className="arrow">⌄</p>
+            <p onClick = {event => event.stopPropagation()} className="arrow">⌄</p>
             {isClicked && <DropdownUser/>}
         </div>
-        
+    
     )
 }
 
